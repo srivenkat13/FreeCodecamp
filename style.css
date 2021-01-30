@@ -1,0 +1,142 @@
+/*  reseting all the default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*  font h1, h2 h3 and p with opacity */
+h1 {
+  color: #426696;
+  font-weight: 250;
+  font-size: 1.5rem;
+  opacity: 0.9;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 200;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+/*  main section with cyna background */
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  /*  telling it to fill 100 % of the view port height  */
+  background: linear-gradient(to right top, #13edc5dc, #6cdbeb);
+  /* adding a  gradient background, which goes lineraly to the right top */
+  /* colors used first : #65dfc9, #6cdbeb */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*  styling the glass */
+.glass {
+  background: white;
+  /*  how much width and height the glass part should take  */
+  min-height: 80vh;
+  width: 60%;
+  /*  this line above is the primary thing which lets you  get the glass look to the page. Cz we are using the RGBA type color which lets you control the opacity of the color we use. you Get it !!! */
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 1.2rem;
+  z-index: 3;
+  /*  more the value of z-index:  higher its in the plane ; */
+  backdrop-filter: blur(10px);
+  /*  to get the blur effect ofcourse , the higher you go here the more intense the effect its gonna be */
+  display: flex;
+  box-shadow: 6px 6px 40px rgba(125, 125, 125, 0.2);
+}
+/*  styling the side circles  */
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.2)
+  );
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  z-index: 2;
+  /*  to move this where ever needed */
+  border-radius: 50%;
+  /*  to make them perfectlly circles */
+}
+/*  positioning circle1 */
+.circle1 {
+  top: 3%;
+  right: 13%;
+}
+/*  positioning cirlce2 */
+.circle2 {
+  bottom: 3%;
+  left: 13%;
+}
+/*  adjusting the image and  */
+.user img {
+  margin-top: 10px;
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  border-radius: 50%;
+  /*  to make the image smaller  */
+}
+/*  styling the side nav bar outside */
+.dashboard {
+  /*  0.5 specifies , it takes half the space of other flext item */
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.1)
+  );
+  border-radius: 1.2rem;
+}
+/* how elements in the nav behave */
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+/*  navigation links */
+h2 a {
+  color: #658ec6;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 1;
+}
+/*  on hover effects of the links */
+h2 a:hover {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.5;
+}
+/*  for spacing items in the nav bar */
+.link h2 {
+  padding: 0.2rem;
+}
+
+.cards {
+  /* margin: 3rem; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
