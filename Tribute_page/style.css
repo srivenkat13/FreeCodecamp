@@ -1,0 +1,86 @@
+/* <!--******************* HEADING STYLES   ******************* --> */
+html {
+  background-color: #fff;
+  /* margin: 20px 5px; */
+}
+#main {
+  display: grid;
+  position: relative;
+  background-color: #eee;
+  /* width: ; */
+  /* margin: auto; */
+  top: 10px;
+  border-radius: 8px;
+  padding: 10px 0 10px 0;
+  font-family: sans-serif, serif;
+}
+#title {
+  font-size: 40px;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+#title2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  color: #757575;
+}
+/* <!--******************* IMAGE STYLE   ******************* --> */
+#img-div {
+  display: grid;
+  padding: 10px 10px 20px 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px;
+}
+#image {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+#img-caption {
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #757575;
+  font-size: 15px;
+}
+/* <!--******************* TIMLINE STYLE   ******************* --> */
+#tribute-info,
+section {
+  display: grid;
+  position: relative;
+  width:80%;
+  /* left:10%; */
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  line-height: 1.5;
+  font-style: 16px;
+}
+
+#text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+section {
+  font-style: italic;
+  font-size: 20px;
+}
+/* <!-- ******************* LINK and HOVER STYLE  *******************  --> */
+
+a,
+.footer {
+  color: black;
+}
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+p1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href=" style.css" />
+    <title>Freecode camp Survey Form</title>
+  </head>
+  <body>
+    <main class="container">
+
+
+      
+      <!-- **************** HEADING SECTION ***************** -->
+
+      <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+
+      <!-- **************** FORM SECTION ***************** -->
+
+      <form action="" id="survey-form">
+        <!-- when giving an input element label can be used instead of p -->
+        <!-- each input field can be placed in a div tag  and can be combined by a class -->
+
+        <!-- **************** NAME DIVISION  ***************** -->
+
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+            class="form-control"
+          />
+          <!-- **************** EMAIL DIVISION  ***************** -->
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+            class="form-control"
+          />
+        </div>
+        <!-- **************** AGE DIVISION  ***************** -->
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age(optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Age"
+            min="10"
+            max="60"
+            class="form-control"
+          />
+        </div>
+        <!-- when its no longer a label we can use P tag as always -->
+
+        <!-- **************** CURRENT ROLE DIVISION  ***************** -->
+
+        <div class="form-group">
+          <p>What option best describes your current role?</p>
+          <!-- DROP-DOWN MENU -->
+          <select name="roles" id="dropdown" class="form-control">
+            <!-- disabled keeps the options out of list 
+                    selected keeps it as the default option -->
+            <option disabled selected value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time job</option>
+            <option value="learner">Full time leaner</option>
+            <option value="perfernotto">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- **************** RECOMMENDATION DIVISION  ***************** -->
+
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <!-- BUTTON ONE -->
+          <label>
+            <input
+              type="radio"
+              name="recommend"
+              checked
+              value="definitely"
+              class="input-radio"
+            />Definitely
+            <!-- checked attribute keeps the options checked by default -->
+            <!-- when a value attribute is also included it sends the data to backend like"name:value"s
+            -->
+          </label>
+          <!-- BUTTON TWO -->
+          <label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="recommend"
+              value="maybe"
+            />Maybe
+          </label>
+          <!-- BUTTON THREE -->
+          <label>
+            <input
+              class="input-radio"
+              type="radio"
+              name="recommend"
+              value="notsure"
+            />Not sure
+          </label>
+        </div>
+
+        <!-- **************** FAVORITE FEATURE DIVISION  ***************** -->
+
+        <div class="form-group">
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select name="liking" id="dropdown2" class="form-control" required>
+            <option value="" disabled selected> Select an option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="projects">Projects </option>
+            <option value="Community">Community </option>
+            <option value="opensource">Open Source</option>
+          </select>
+        </div>
+
+        <!-- **************** IMPROVEMENT DIVISION  ***************** -->
+
+        <div class="form-group">
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="frontendprojects"
+            />Front-end projects
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="backendprojects"
+            />Back-end projects
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="datavisualization"
+            />Data Visualization
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="challenges"
+            />Challenges
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="opensourcecommunity"
+            />Open Source Community
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="gitterhelprooms"
+            />Gitter help rooms
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="video"
+            />Video
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="wiki"
+            />Wiki
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="citymeetups"
+            />City meetups
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="forum"
+            />Forum
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="prefer"
+              class="input-checkbox"
+              value="additionalcourses"
+            />Additional Courses
+          </label>
+        </div>
+
+        <!-- **************** COMMENTS DIVISION  ***************** -->
+
+        <div class="form-group">
+          <p>Any Comments or suggestions?</p>
+          <textarea
+            name="anwser"
+            id="comments"
+            class="input-textarea"
+            cols="30"
+            rows="5"
+            placeholder="Enter your comment here....."
+          ></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+
+        <div class="form-group">
+          <button class="submit-button" type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
