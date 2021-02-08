@@ -49,10 +49,23 @@ main {
   border-radius: 1.2rem;
   z-index: 3;
   /*  more the value of z-index:  higher its in the plane ; */
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   /*  to get the blur effect ofcourse , the higher you go here the more intense the effect its gonna be */
   display: flex;
   box-shadow: 6px 6px 40px rgba(125, 125, 125, 0.2);
+}
+.glass {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.2)
+  );
+  /* background: rgba(255, 255, 255, 0.15); */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  backdrop-filter: blur(1.5px);
+  border-radius: 1.2rem;
+  -webkit-backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 /*  styling the side circles  */
 .circle1,
