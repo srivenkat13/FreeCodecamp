@@ -1,0 +1,54 @@
+/* resest and imports */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+/*  GLOBAL  Elements STYLES   */
+
+body {
+  background-color: #eee;
+  font: normal 16px Arial;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* GLOBAL class STYLES  */
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  border: 2px solid black;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: darkorange;
+}
+
+.grid {
+  display: flex;
+}
+
+.logo {
+  width: 60vw;
+}
