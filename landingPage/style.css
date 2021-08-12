@@ -1,20 +1,22 @@
 /* resest and imports */
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+:root {
+  /* --main-color: #ffb703; */
+  --main-color: darksalmon;
+  --bg-color: #eee;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
 /*  GLOBAL  Elements STYLES   */
 
 body {
-  background-color: #eee;
+  background-color: var(--bg-color);
   font: normal 16px Arial;
-}
-
-#page-wrapper {
-  position: relative;
 }
 
 li {
@@ -22,11 +24,34 @@ li {
 }
 
 a {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 
+i {
+  color: var(--main-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  min-height: 75px;
+  top: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #e5e5e5;
+}
+
+nav {
+  font-weight: 400;
+}
 /* GLOBAL class STYLES  */
+
+#page-wrapper {
+  position: relative;
+}
 
 .container {
   max-width: 1000px;
@@ -38,11 +63,11 @@ a {
   padding: 0 20px;
   height: 40px;
   font-size: 1em;
-  border: 2px solid black;
+  border: 0;
   border-radius: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: darkorange;
+  background-color: var(--main-color);
 }
 
 .grid {
@@ -52,3 +77,82 @@ a {
 .logo {
   width: 60vw;
 }
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+}
+
+nav > ul {
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* ---------title section styling-------------- */
+#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  margin-top: 75px;
+}
+
+#title > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#title input[type="email"] {
+  min-width: 200px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 100;
+  font-size: 16px;
+  opacity: 0.8;
+  text-transform: capitalize;
+}
+
+#title input[type="submit"] {
+  margin: 15px 0;
+  height: 40px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+#title .btn:active {
+  transform: scale(0.99);
+}
+
+
+/* ---------------------features section------------------ */
+#features{
+  margin-top: 30px;
+  
+}
+
+/* #features .logo {
+  height: 125px;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+#features .desc{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 130px;
+  width: 80vw;
+  padding: 5px;
+}
+
